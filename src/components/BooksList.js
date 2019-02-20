@@ -61,7 +61,7 @@ const filteredByTags = ListComponent => class FilteredByTags extends PureCompone
                     Filtered by tags:
                     {tags.map((tag, key) => <Tag key={`filter-t-${tag}`}>{tag}</Tag>)}
                 </span>&nbsp;
-                <a onClick={clearHandler}>(clear)</a>
+                <a style={{cursor: 'pointer'}} onClick={clearHandler}>(clear)</a>
             </div>
             <ListComponent books={filterByTags(books, tags)} {...props}/>
         </div>
