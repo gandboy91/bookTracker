@@ -6,7 +6,8 @@
   margin: 50px auto;
   text-align: center;
   min-width: 460px;
-  width: 50vw;
+  max-width: 1260px;
+  padding: 0 10px;
 }
 
 .tabs {
@@ -29,32 +30,51 @@
   border-bottom: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.tags {
+  margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tag {
+  background-color: #ddd;
+  margin-right: 10px;
+  display: inline;
+  cursor: pointer;
+}
+
+.bookCard {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid;
+  border-top: none;
+  margin-left: -1px;
+}
+
+.emptyList {
+  height: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.bookTitle {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moveButton {
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bookHeader {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.filterInfo {
+  padding: 30px 20px;
 }
