@@ -8,7 +8,7 @@ import {STORAGE_KEY} from "../constants/index";
 
 /**
  * builds search query from object using query-string lib
- * example: {foo:1, a:2} => /?foo=1&a=2
+ * @example: {foo:1, a:2} => /?foo=1&a=2
  * @param {object} parsedQueryObject
  */
 const buildSearchQuery = parsedQueryObject => `/?${queryString.stringify(parsedQueryObject)}`
